@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int part1()
+void part1()
 {
 	FILE *fp;
 	char c;
@@ -29,7 +28,7 @@ int part1()
 	printf("%d\n", password);
 }
 
-int part2()
+void part2()
 {
 	FILE *fp;
 	int i;
@@ -59,6 +58,7 @@ int part2()
 	}
 	printf("%d\n", password);
 }
+
 int main()
 {
 	part1();
