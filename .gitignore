@@ -1,2 +1,6 @@
 input/
 a.out
+.bsp/
+.metals/
+.scala-build/
+.vscode/
