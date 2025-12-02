@@ -4,7 +4,7 @@ def base(f: String => Boolean): Long =
   os.read(os.pwd / "input" / "day02" / "in.txt")
     .strip
     .split(",")
-    .map(r => (r.split("-").head).toLong to (r.split("-").last.strip).toLong)
+    .map(r => (r.split("-").head).toLong to (r.split("-").last).toLong)
     .map(r => r.filter(n => f(n.toString)).sum)
     .sum
 
